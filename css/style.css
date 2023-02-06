@@ -187,7 +187,8 @@ display: inline-block;
 
 /* SITE HADER CART */
 .site-header__cart {
-
+    margin-right: 46px;
+    margin-left: 24px;
 }
 
 .site-header__cart-link {
@@ -223,6 +224,26 @@ display: inline-block;
     object-fit: contain;
 }
 
+
+/* USER PCITURE */
+
+.site-header__profile-link {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 2px solid transparent;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.site-header__profile-link:hover {
+    border-color: var(--accent-color);
+}
+
+.site-header__profile-avatar {
+    width: 50px;
+    height: 50px;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
