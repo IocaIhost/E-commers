@@ -1,9 +1,12 @@
 :root{
-    --text-color: '';
-    --bg-color: '';
-    --body-font-family: "Arial", sans-serif;
-    --primary-color: '';
-    --primary-heading: '';
+    --bg-color: #fff;
+    --light-bg: #f6f8fd;
+    --accent-color: #ff7e1b;
+    --accent-color-hover: #ffab6a;
+    --accent-color-light: #ffeee2;
+    --text-color: #697070;
+    --text-color-dark: #1d2026;
+    --body-font-family: "Kumbh Sans", "Arial", sans-serif;
 }
 
 html{
@@ -32,7 +35,7 @@ body{
     padding: 0;
     margin: 0;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 26px;
     font-family: var(--body-font-family);
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -86,9 +89,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1148px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-left: auto;
     margin-right: auto;
 }
