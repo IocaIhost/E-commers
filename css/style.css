@@ -25,7 +25,6 @@ html{
 
 
 *:focus{
-    position: absolute;
     outline: 2px dashed var(--accent-color);
     outline-offset: 1px;
 }
@@ -192,7 +191,7 @@ display: inline-block;
 }
 
 .button:active {
-    /* opacity: 0.6; */
+    opacity: 0.6;
     transform: translateY(3px);
 }
 
@@ -358,6 +357,7 @@ display: inline-block;
 
 .img-showcase__showcase {
     position: relative;
+    z-index: 1;
     margin-bottom: 32px;
 }
 
@@ -422,7 +422,7 @@ display: inline-block;
 }
 
 .img-showcase__active-img {
-    display: block;
+    /* display: block; */
     width: 445px;
     height: 445px;
     border-radius: 15px;
@@ -528,6 +528,7 @@ display: inline-block;
 .lightbox {
     display: none;
     position: fixed;
+    z-index: 30;
     left: 0;
     top: 0;
     width: 100%;
@@ -581,10 +582,6 @@ display: inline-block;
     align-items: center;
     border-bottom: 1px solid var(--devider-bg);
 }
-
-
-/* .shopping-cart__content {
-} */
 
 .site-header__logo {
     flex-shrink: 0;
