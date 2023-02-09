@@ -144,3 +144,26 @@ if (elLightboxControlPrev) {
         elImgLightboxActiveImg.srcset = `${elNextActiveItem.children[0].dataset.imgShowcaseBig} 1x, ${elNextActiveItem.children[0].dataset.imgShowcaseRetina} 2x`
     });
 }
+
+
+// Increase and decrease product value
+
+const elsProductIncrementQtyButtons = document.querySelector('.js-prodcut-quantity-increment-buttton');
+const elsProductDecrementQtyButtons = document.querySelector('.js-prodcut-quantity-decrement-buttton');
+const elProductQty = document.querySelector('.product-info__quantity');
+
+if (elsProductIncrementQtyButtons) {
+    elsProductIncrementQtyButtons.addEventListener('click', function () {
+        elProductQty.textContent = parseInt(elProductQty.textContent, 10) + 1;
+        console.log('ishladi');
+    })
+}
+
+if (elsProductDecrementQtyButtons) {
+    elsProductDecrementQtyButtons.addEventListener('click', function () {
+        const qty = parseInt(elProductQty.textContent, 10);
+        if (qty > 0){
+            elProductQty.textContent = qty - 1;
+        }
+    })
+}
